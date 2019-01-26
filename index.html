@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome - Postal</title>
+        <link href="styles/index.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- The Main Site Container -->
+<div class="siteWrapper">
+    <div class="head_content">
+        <!-- Beginning of the site's header section -->
+        <header>
+            <section class="logoContainer">
+                <img src="imgs/postalLogo.png"/>
+            </section>
+            <section class="siteDescription">
+                <h2>Oh! Well, hello, there. We're, <span>Postal</span>.<br/>We create awesome programs to help you get<br/>shit done.</h2>
+                <span id="months"> </span>
+            </section>
+        </header>
+        <!-- End of the header -->
+
+        <!-- Beginning of the contents area -->
+        <section class="contents">
+
+         <!-- Beginning of theApps area -->
+            <section class="theApps">
+                <table align="center" cellpadding="0" cellspacing="8">
+                    <tr>
+                        <td><a href="#"><img src="imgs/cargo.png"/></a></td>
+                        <td><a href="#"><img src="imgs/base.png"/></a></td>
+                        <td><a href="#"><img src="imgs/security.png"/></a></td>
+                    </tr>
+                </table>
+            </section>
+            <!-- End of theApps area -->
+
+            <!-- Beginning of the subContents -->
+                <section class="subContent">
+                    <h2>Check our <span><a href="#">blog</a></span> for more content!</h2>
+                </section>  
+            <!-- End of the subContents -->
+        </div>
+            
+        </section>
+        <!-- End of the Contents -->
+
+        <!-- Beginning of the footer -->
+        <footer>
+            <section class="footerTitle">
+                <h2>Need help from us? We're here.</h2>
+                <section class="linksList">
+                    <ul>
+                        <li><img src="https://cdn.pixabay.com/photo/2014/04/03/10/25/reading-310397_960_720.png"/><a href="#">Visit the Library for instant answers</a></li>
+                        <li><img src="https://cdn.pixabay.com/photo/2017/08/23/11/30/twitter-2672572_960_720.jpg"/><a href="#">Ask us a quick question on Twitter</a></li>
+                        <li><img src="https://cdn.pixabay.com/photo/2014/05/25/22/31/icon-354008_960_720.png"/>Get help with
+                            <form action="#">
+                                <select>
+                                    <option value="cargo">Cargo</option>
+                                    <option value="base">Base</option>
+                                    <option value="security">Security</option>
+                                </select>
+                                <input type="submit" value="Go"/>
+                            </form>
+                        </li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Circle-icons-download.svg/512px-Circle-icons-download.svg.png"/><a href="#">Download older versions of our applications</a></li>
+                        <li><img src="https://png.pngtree.com/svg/20160606/help_center_retrieve_transaction_password_242336.png"/>Retrieve serial numbers
+                            <form action="#">
+                                <select>
+                                    <option value="cargo">Cargo</option>
+                                    <option value="base">Base</option>
+                                    <option value="security">Security</option>
+                                </select>
+                                <input type="submit" value="Go"/>
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+                <section class="copyRights">
+                    <p>352 Postal Ave, Best Apps, IL 58067. 773-556-3356</p>
+                    <p>&copy;<span id="copyrightYear"></span> Postal Inc - <a href="#">Jobs</a><span> </span><a href="#">Privacy</a></p>
+                </section>
+            </section>
+        </footer>
+        <!-- End of the footer -->
+
+    </div>
+    <!-- End of site wrapper -->
+        <script src="scripts/jquery-3.3.1.js"></script>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>

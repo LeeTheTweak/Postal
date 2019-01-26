@@ -1,0 +1,133 @@
+html, body {
+  padding: 0;
+  margin: 0 auto;
+  background-color: #e7e7e7;
+  width: 100%;
+  height: auto; }
+
+.siteWrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto; }
+
+header .logoContainer {
+  text-align: center; }
+  header .logoContainer img {
+    width: 35vw; }
+header .siteDescription {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.5vw;
+  color: #40405c;
+  margin-bottom: 20px; }
+  header .siteDescription h2 {
+    margin-top: 0;
+    font-weight: lighter; }
+  header .siteDescription span {
+    color: #fba66e; }
+  header .siteDescription #months {
+    color: orange;
+    font-size: 40px;
+    font-weight: bold; }
+
+@media only screen and (max-width: 500px) {
+  header {
+    padding: 5px; }
+    header .logoContainer {
+      text-align: center; }
+      header .logoContainer img {
+        width: 300px; }
+    header .siteDescription {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 20px;
+      color: #40405c; }
+      header .siteDescription h2 {
+        margin-top: 0;
+        font-weight: lighter; }
+      header .siteDescription span {
+        color: #fba66e; } }
+.contents .theApps table tr td a img {
+  width: 20vw; }
+
+@media only screen and (max-width: 500px) {
+  .contents .theApps table tr td a img {
+    width: 90px; } }
+.subContent {
+  text-align: center; }
+  .subContent h2 {
+    font-size: 3.5vw;
+    font-family: sans-serif;
+    color: #40405c;
+    font-weight: lighter; }
+    .subContent h2 span a {
+      color: #fba66e; }
+
+@media only screen and (max-width: 500px) {
+  .subContent {
+    text-align: center; }
+    .subContent h2 {
+      font-size: 30px;
+      font-family: sans-serif;
+      color: #40405c;
+      font-weight: lighter; }
+      .subContent h2 span a {
+        color: #fba66e; } }
+footer {
+  background-color: #20212b;
+  padding: 10px;
+  font-family: sans-serif;
+  color: lightgray; }
+  footer h2 {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: lighter;
+    color: grey;
+    margin-bottom: 0; }
+  footer .linksList ul {
+    padding-left: 30%;
+    padding-right: 30%; }
+    footer .linksList ul li {
+      font-size: 1.7vw;
+      margin-bottom: 10px;
+      list-style-type: none; }
+      footer .linksList ul li form {
+        display: inline-block; }
+        footer .linksList ul li form select {
+          background-color: black;
+          width: 10vw;
+          height: 2.5vw;
+          position: relative;
+          top: 0px;
+          color: lightGrey;
+          font-size: 2vw; }
+        footer .linksList ul li form input {
+          background-color: black;
+          width: 2.8vw;
+          height: 2.5vw;
+          color: lightGrey;
+          font-size: 1vw;
+          text-align: center;
+          position: relative;
+          top: -6px; }
+      footer .linksList ul li img {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 5px;
+        margin-right: 5px;
+        background-color: white; }
+      footer .linksList ul li a {
+        text-decoration: none;
+        color: lightgray; }
+        footer .linksList ul li a:hover {
+          cursor: pointer;
+          text-decoration: underline; }
+  footer .copyRights {
+    text-align: center;
+    color: grey; }
+
+@media only screen and (max-width: 500px) {
+  footer .footerTitle h2 {
+    font-size: 30px; } }
+
+/*# sourceMappingURL=index.css.map */
