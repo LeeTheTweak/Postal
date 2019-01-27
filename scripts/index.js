@@ -3,15 +3,15 @@
   Get the months span element and change month based on 
   actuall month.
 */
-var months = ["January", "February", "March",
+const months = ["January", "February", "March",
                 "April", "May", "June", "July",
                 "August", "September", "October",
                 "November", "December"
 ];
 
-var monthElement = document.getElementById("months");
-var monthDate = new Date();
-var actualMonth = monthDate.getMonth();
+const monthElement = document.getElementById("months");
+let monthDate = new Date();
+let actualMonth = monthDate.getMonth();
 monthElement.textContent = months[actualMonth] + " Apps";
 
 /******************* END OF HEADER ***********************/
@@ -53,9 +53,9 @@ monthElement.textContent = months[actualMonth] + " Apps";
     change it depending on the actual 
     year
 */
-var copyrightYearSpan = document.getElementById("copyrightYear");
-var date = new Date();
-var year = date.getFullYear();
+let copyrightYearSpan = document.getElementById("copyrightYear");
+let date = new Date();
+let year = date.getFullYear();
 copyrightYearSpan.textContent = " " + year;
 
 /**************** END OF FOOTER *****************************/
