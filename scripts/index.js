@@ -27,17 +27,17 @@ monthElement.textContent = months[actualMonth] + " Apps";
     */
     const appsIcons = document.querySelectorAll(".theApps table tr td a img");
     for(let i = 0; i < appsIcons.length; i += 1) {
-    let superFast = 200;
+    let speed = 200;
 
-    function growIcon() {
+    const growIcon = () => {
           $(appsIcons).eq(i).animate({
             width: "+=25px"
-           }, superFast);  
+           }, speed);  
     }
-    function shrinkIcons() {
+    const shrinkIcons = () => {
         $(appsIcons).eq(i).animate({
             width: "-=25px"
-        }, superFast);
+        }, speed);
     }
     appsIcons[i].addEventListener("mouseenter", growIcon, false);
     appsIcons[i].addEventListener("mouseleave", shrinkIcons, false);
