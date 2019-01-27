@@ -25,46 +25,23 @@ monthElement.textContent = months[actualMonth] + " Apps";
         Getting the apps icons and animating them by mouseenter and
         mouseleave.
     */
-    var apps = document.querySelectorAll(".theApps table tr td a img");
+    const appsIcons = document.querySelectorAll(".theApps table tr td a img");
+    for(let i = 0; i < appsIcons.length; i += 1) {
+    let superFast = 200;
 
-    function growApp1() {
-        $(apps).eq(0).animate({
-            width: "+=40px"
-        }, 130);
+    function growIcon() {
+          $(appsIcons).eq(i).animate({
+            width: "+=25px"
+           }, superFast);  
     }
-    function shrinkApp1() {
-        $(apps).eq(0).animate({
-            width: "-=40px"
-        }, 130);
+    function shrinkIcons() {
+        $(appsIcons).eq(i).animate({
+            width: "-=25px"
+        }, superFast);
     }
-
-    function growApp2() {
-        $(apps).eq(1).animate({
-            width: "+=40px"
-        }, 130);
-    }
-    function shrinkApp2() {
-        $(apps).eq(1).animate({
-            width: "-=40px"
-        }, 130);
-    }
-
-    function growApp3() {
-        $(apps).eq(2).animate({
-            width: "+=40px"
-        }, 130);
-    }
-    function shrinkApp3() {
-        $(apps).eq(2).animate({
-            width: "-=40px"
-        }, 130);
-    }
-    apps[0].addEventListener("mouseenter", growApp1, false);
-    apps[0].addEventListener("mouseleave", shrinkApp1, false);
-    apps[1].addEventListener("mouseenter", growApp2, false);
-    apps[1].addEventListener("mouseleave", shrinkApp2, false);
-    apps[2].addEventListener("mouseenter", growApp3, false);
-    apps[2].addEventListener("mouseleave", shrinkApp3, false);
+    appsIcons[i].addEventListener("mouseenter", growIcon, false);
+    appsIcons[i].addEventListener("mouseleave", shrinkIcons, false);
+}
 
     /******************* END OF APPS AREA **************************/
 
